@@ -45,6 +45,7 @@ class Owner
     animals = @pets.reduce([]) {|pets, (species, animals)|
       pets.concat(animals)
     }
+    animals.each {|animal| animal.mood = "nervous"}
   end
 
   def self.all
