@@ -46,6 +46,11 @@ class Owner
       pets.concat(animals)
     }
     animals.each {|animal| animal.mood = "nervous"}
+    @pets = {
+      :fishes => [],
+      :dogs => [],
+      :cats => []
+    }
   end
 
   def self.all
