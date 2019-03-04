@@ -28,5 +28,4 @@ class Owner
     @@all.length
   end
 
-  def 
 end
