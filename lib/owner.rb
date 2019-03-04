@@ -42,6 +42,9 @@ class Owner
   end
 
   def sell_pets
+    animals = @pets.reduce([]) {|pets, (species, animals)|
+      pets.concat(animals)
+    }
   end
 
   def self.all
